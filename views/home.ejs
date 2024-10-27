@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="course">
+          <div class="video">
+            <% if(locals.posts){ %>
+            <iframe
+              src="<%=posts[0].link%>"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer;
+              autoplay; clipboard-write; encrypted-media; gyroscope;
+              picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <%}%>
+          </div>
+          <div class="section">
+            <h1 class="course-title">CS50</h1>
+            <div class="section-lectures">
+              <% posts.forEach(item => { %>
+              <a href="/lectures/<%=item.id%>"><p><%= item.title %></p></a>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <%if(locals.posts){%>
+          <p><%=posts[0].docs%></p>
+          <%}%>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

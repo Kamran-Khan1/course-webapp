@@ -1,0 +1,8 @@
+<div class="section">
+  <h1 class="course-title">CS50</h1>
+  <div class="section-lectures">
+    <% postData.length.forEach(item => { %>
+    <a href="/lectures/<%=item.id%>"><p><%= item.title %></p></a>
+    <% }); %>
+  </div>
+</div>

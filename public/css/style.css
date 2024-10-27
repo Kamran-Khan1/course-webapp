@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+}
+body {
+  color: white;
+}
+.container {
+  width: 950px;
+  margin: 0 auto 0 auto;
+}
+.course {
+  display: flex;
+}
+
+iframe {
+  width: 700px;
+  height: 400px;
+}
+
+.details {
+  margin-top: 10px;
+  color: rgb(173, 173, 173);
+  width: 670px;
+  font-size: 20px;
+  border: 2px solid rgba(169, 217, 142, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+.section {
+  width: 235px;
+  height: 400px;
+  margin-left: 15px;
+}
+
+.section-lectures {
+  height: 355px;
+  overflow: auto;
+}
+
+.section-lectures::-webkit-scrollbar {
+  display: none;
+}
+
+.section-lectures p {
+  font-size: 20px;
+  border: 1px solid rgb(74, 74, 74);
+  margin: 3px 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.course-title {
+  width: 234px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  border: rgb(52, 52, 52);
+  background-color: bisque;
+  color: rgb(46, 46, 46);
+}
+
+.section-lectures p:hover {
+  background-color: rgb(62, 62, 62);
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: rgb(62, 62, 62);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

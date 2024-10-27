@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="/css/edit.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="/new/post" method="POST">
+        <label for="link">Link:</label>
+        <input type="url" name="link" />
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" />
+        <h3>Docs:</h3>
+        <textarea name="docs" id="docs"></textarea>
+        <div class="buttons">
+          <button type="submit" class="submit">Submit</button>
+          <a href="/" class="home">Home</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
